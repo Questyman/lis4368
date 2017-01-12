@@ -10,7 +10,7 @@
 
 1. [A1 README.md](a1/README.md "My A1 README.md file")
     - Install JDK
-    - [List other assignment requirements here]
+    - Install Tomcat
 
 2. [A2 README.md](a2/README.md "My A2 README.md file")
 
