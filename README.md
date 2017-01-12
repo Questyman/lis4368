@@ -1,10 +1,10 @@
 > **NOTE:** This README.md file should be placed at the **root of each of your repos directories.**
 
-# Course Title
+# LIS 4368 - Advanced Web Applications Development
 
-## Your Name
+## Michael Gunter
 
-### Assignment # Requirements:
+### Assignment # 1 Requirements:
 
 *Course Work Links:*
 
