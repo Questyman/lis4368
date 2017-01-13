@@ -10,7 +10,7 @@
 
 ### Assignment #1 Requirements:
 
-**Three Parts:*
+**Three Parts:**
 1. Distributed Version Control with Git and Bitbucket
 2. Java/JSP/Servlet Development installation
 3. Chapter Questions (Chs 1 - 4)
