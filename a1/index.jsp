@@ -35,7 +35,7 @@
 
 					<br /> <br />
 
-					<img src="img/tomcat.png" class="img-responsive" alt="JDK Installation" />
+					<img src="img/tomcat.png" class="img-responsive" alt="Tomcat Installation" />
 				</div>
 			</div>
 
