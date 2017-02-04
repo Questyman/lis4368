@@ -27,7 +27,7 @@
 
 *Screenshot of hello directory*:
 
-![Java Hello Screenshot](img/hello.png)
+![Hello Screenshot](img/hello.png)
 
 *Screenshot of HelloHome.html*:
 
