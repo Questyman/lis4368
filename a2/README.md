@@ -9,3 +9,37 @@
 ## Michael Gunter
 
 ### Assignment #2 Requirements:
+
+**Two Parts:**
+1. MySQL Installation
+2. JSP/Servlet Screenshots
+
+#### README.md file should include the following items:
+
+* Screenshot of hello directory
+* Screenshot of HelloHome.html
+* Screenshot of sayhello (HelloServlet)
+* Screenshot of querybook.html
+* Screenshot of sayhi servlet
+
+#### Assignment Screenshots:
+
+*Screenshot of hello directory*:
+
+![Java Hello Screenshot](img/hello.png)
+
+*Screenshot of HelloHome.html*:
+
+![HelloHome.html Screenshot](img/HelloHome.png)
+
+*Screenshot of sayhello*:
+
+![sayhello Screenshot](img/sayhello.png)
+
+*Screenshot of querybook.html*:
+
+![Querybook.html Screenshot](img/querybook.png)
+
+*Screenshot of sayhi*:
+
+![Sayhi Servlet Screenshot](img/sayhi.png)
