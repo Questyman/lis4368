@@ -21,6 +21,7 @@
 * Screenshot of sayhello (HelloServlet)
 * Screenshot of querybook.html
 * Screenshot of sayhi servlet
+* Screenshot of query result set
 
 #### Assignment Screenshots:
 
@@ -43,3 +44,7 @@
 *Screenshot of sayhi*:
 
 ![Sayhi Servlet Screenshot](img/sayhi.png)
+
+*Screenshot of query result set*:
+
+![Query Result Set Screenshot](img/qrs.png)
