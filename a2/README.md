@@ -16,34 +16,34 @@
 
 #### README.md file should include the following items:
 
-* Screenshot of hello directory
-* Screenshot of HelloHome.html
-* Screenshot of sayhello (HelloServlet)
-* Screenshot of querybook.html
-* Screenshot of sayhi servlet
+* Link of hello directory
+* Link of HelloHome.html
+* Link of sayhello (HelloServlet)
+* Link of querybook.html
+* Link of sayhi servlet
 * Screenshot of query result set
 
 #### Assignment Screenshots:
 
 *Screenshot of hello directory*:
 
-![Hello Screenshot](img/hello.png)
+![Hello link](http://localhost:9999/hello)
 
 *Screenshot of HelloHome.html*:
 
-![HelloHome.html Screenshot](img/HelloHome.png)
+![HelloHome.html link](http://localhost:9999/hello/HelloHome.html)
 
 *Screenshot of sayhello*:
 
-![sayhello Screenshot](img/sayhello.png)
+![sayhello link](http://localhost:9999/hello/sayhello)
 
 *Screenshot of querybook.html*:
 
-![Querybook.html Screenshot](img/querybook.png)
+![Querybook.html link](http://localhost:9999/hello/querybook.html)
 
 *Screenshot of sayhi*:
 
-![Sayhi Servlet Screenshot](img/sayhi.png)
+![Sayhi Servlet link](http://localhost:9999/hello/sayhi)
 
 *Screenshot of query result set*:
 
