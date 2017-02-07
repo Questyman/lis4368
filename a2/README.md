@@ -27,23 +27,23 @@
 
 *Link of hello directory*:
 
-[Hello link](http://localhost:9999/hello)
+[http://localhost:9999/hello](http://localhost:9999/hello)
 
 *Link of HelloHome.html*:
 
-[HelloHome.html link](http://localhost:9999/hello/HelloHome.html)
+[http://localhost:9999/hello/HelloHome.html](http://localhost:9999/hello/HelloHome.html)
 
 *Link of sayhello*:
 
-[sayhello link](http://localhost:9999/hello/sayhello)
+[http://localhost:9999/hello/sayhello](http://localhost:9999/hello/sayhello)
 
 *Link of querybook.html*:
 
-[Querybook.html link](http://localhost:9999/hello/querybook.html)
+[http://localhost:9999/hello/querybook.html](http://localhost:9999/hello/querybook.html)
 
 *Link of sayhi*:
 
-[Sayhi Servlet link](http://localhost:9999/hello/sayhi)
+[http://localhost:9999/hello/sayhi](http://localhost:9999/hello/sayhi)
 
 *Screenshot of query result set*:
 
