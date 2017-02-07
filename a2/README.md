@@ -27,23 +27,23 @@
 
 *Screenshot of hello directory*:
 
-![Hello link](http://localhost:9999/hello)
+[Hello link](http://localhost:9999/hello)
 
 *Screenshot of HelloHome.html*:
 
-![HelloHome.html link](http://localhost:9999/hello/HelloHome.html)
+[HelloHome.html link](http://localhost:9999/hello/HelloHome.html)
 
 *Screenshot of sayhello*:
 
-![sayhello link](http://localhost:9999/hello/sayhello)
+[sayhello link](http://localhost:9999/hello/sayhello)
 
 *Screenshot of querybook.html*:
 
-![Querybook.html link](http://localhost:9999/hello/querybook.html)
+[Querybook.html link](http://localhost:9999/hello/querybook.html)
 
 *Screenshot of sayhi*:
 
-![Sayhi Servlet link](http://localhost:9999/hello/sayhi)
+[Sayhi Servlet link](http://localhost:9999/hello/sayhi)
 
 *Screenshot of query result set*:
 
