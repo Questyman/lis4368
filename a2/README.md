@@ -25,23 +25,23 @@
 
 #### Assignment Screenshots:
 
-*Screenshot of hello directory*:
+*Link of hello directory*:
 
 [Hello link](http://localhost:9999/hello)
 
-*Screenshot of HelloHome.html*:
+*Link of HelloHome.html*:
 
 [HelloHome.html link](http://localhost:9999/hello/HelloHome.html)
 
-*Screenshot of sayhello*:
+*Link of sayhello*:
 
 [sayhello link](http://localhost:9999/hello/sayhello)
 
-*Screenshot of querybook.html*:
+*Link of querybook.html*:
 
 [Querybook.html link](http://localhost:9999/hello/querybook.html)
 
-*Screenshot of sayhi*:
+*Link of sayhi*:
 
 [Sayhi Servlet link](http://localhost:9999/hello/sayhi)
 
