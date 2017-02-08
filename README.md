@@ -15,6 +15,9 @@
     - List git commands
 
 2. [A2 README.md](a2/README.md "My A2 README.md file")
+    - Install MySQL
+    - Assignment 2 Links
+    - Query Result Set Screenshot
 
 3. [A3 README.md](a3/README.md "My A3 README.md file")
 
