@@ -12,7 +12,7 @@
 
 **Two Parts:**
 1. MySQL ERD
-2. JSP/Servlet Screenshots
+2. SQL Statements
 
 #### README.md file should include the following items:
 
