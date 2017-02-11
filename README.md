@@ -25,7 +25,7 @@
 
 4. [P1 README.md](p1/README.md "My P1 README.md file")
 
-5. [A4 README.md](a4/README.md "My A3 README.md file")
+5. [A4 README.md](a4/README.md "My A4 README.md file")
 
 6. [A5 README.md](a5/README.md "My A5 README.md file")
 
