@@ -29,6 +29,3 @@
 6. [A5 README.md](a5/README.md "My A5 README.md file")
 
 7. [P2 README.md](p2/README.md "My P2 README.md file")
-
-
-...
