@@ -31,4 +31,4 @@
 
 *Screenshot of ERD*:
 
-![ERD Screenshot](./img/erd.png)
+![ERD Screenshot](./img/a3.png)
