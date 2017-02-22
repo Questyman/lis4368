@@ -20,8 +20,9 @@
     - Query Result Set Screenshot
 
 3. [A3 README.md](a3/README.md "My A3 README.md file")
-    - MySQL ERD
+    - ERD MWB file
     - SQL Statements
+    - ERD Screenshots
 
 4. [P1 README.md](p1/README.md "My P1 README.md file")
 
