@@ -8,34 +8,34 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="My online portfolio that illustrates skills acquired while working through various project requirements.">
-	<meta name="author" content="Mark K. Jowett, Ph.D.">
+	<meta name="author" content="Michael W. Gunter">
 	<link rel="icon" href="favicon.ico">
 
-	<title>CRSXXXX - Project1 (Fix course number!)</title>
+	<title>LIS4368 - Project 1</title>
 
-	<%@ include file="/css/include_css.jsp" %>		
+	<%@ include file="/css/include_css.jsp" %>
 
 </head>
 <body>
 
 <!-- display application path -->
 <% //= request.getContextPath()%>
-	
+
 <!-- can also find path like this...<a href="${pageContext.request.contextPath}${'/a5/index.jsp'}">A5</a> -->
 
-	<%@ include file="/global/nav.jsp" %>	
+	<%@ include file="/global/nav.jsp" %>
 
 	<div class="container">
 		<div class="starter-template">
 			<div class="row">
 				<div class="col-sm-8 col-sm-offset-2">
-					
+
 					<div class="page-header">
 						<%@ include file="global/header.jsp" %>
 					</div>
 
 					<h2>Customers</h2>
-					
+
 					<form id="add_customer_form" method="post" class="form-horizontal" action="#">
 
 						<div class="form-group">
@@ -50,7 +50,7 @@
 							<div class="col-sm-5">
 								<input type="text" class="form-control" name="lname" />
 							</div>
-						</div>						
+						</div>
 
 						<div class="form-group">
 							<label class="col-sm-3 control-label">Email:</label>
@@ -65,7 +65,7 @@
 								<input type="text" class="form-control" maxlength="255" name="notes" />
 							</div>
 						</div>
-						
+
 						<div class="form-group">
 							<div class="col-sm-5 col-sm-offset-3">
 								<button type="submit" class="btn btn-primary" name="signup" value="Sign up">Submit</button>
@@ -80,8 +80,8 @@
 	</div> <!-- end starter-template -->
  </div> <!-- end container -->
 
- 	<%@ include file="/js/include_js.jsp" %>		
- 
+ 	<%@ include file="/js/include_js.jsp" %>
+
 <script type="text/javascript">
 $(document).ready(function() {
 
@@ -112,7 +112,7 @@ $(document).ready(function() {
 										//alphanumeric (also, "+" prevents empty strings):
 										regexp: /^[a-zA-Z\-]+$/,
 										message: 'First name can only contain letters and hyphens.'
-									},									
+									},
 							},
 					},
 
@@ -129,10 +129,10 @@ $(document).ready(function() {
 									regexp: {
 										regexp: /^[a-zA-Z\-]+$/,
 										message: 'Last name can only contain letters and hyphens'
-									},									
+									},
 							},
 					},
-					
+
 					email: {
 							validators: {
 									notEmpty: {
@@ -146,7 +146,7 @@ $(document).ready(function() {
 											message: 'Must include valid email address'
 									},
 									*/
-								
+
 									stringLength: {
 											min: 1,
 											max: 100,
@@ -155,7 +155,7 @@ $(document).ready(function() {
 									regexp: {
 									regexp: /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/,
 										message: 'Must include valid email'
-									},																		
+									},
 							},
 					},
 			}
