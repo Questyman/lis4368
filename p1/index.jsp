@@ -53,9 +53,58 @@
 						</div>
 
 						<div class="form-group">
+							<label class="col-sm-3 control-label">Street:</label>
+							<div class="col-sm-5">
+								<input type="text" class="form-control" name="street" />
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label class="col-sm-3 control-label">City:</label>
+							<div class="col-sm-5">
+								<input type="text" class="form-control" name="city" />
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label class="col-sm-3 control-label">State:</label>
+							<div class="col-sm-5">
+								<input type="text" class="form-control" name="state" />
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label class="col-sm-3 control-label">Zip:</label>
+							<div class="col-sm-5">
+								<input type="text" class="form-control" name="zip" />
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label class="col-sm-3 control-label">Phone:</label>
+							<div class="col-sm-5">
+								<input type="text" class="form-control" name="phone" />
+							</div>
+						</div>
+
+						<div class="form-group">
 							<label class="col-sm-3 control-label">Email:</label>
 							<div class="col-sm-5">
 								<input type="text" class="form-control" name="email" />
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label class="col-sm-3 control-label">Balance:</label>
+							<div class="col-sm-5">
+								<input type="text" class="form-control" name="balance" />
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label class="col-sm-3 control-label">Total Sales:</label>
+							<div class="col-sm-5">
+								<input type="text" class="form-control" name="totalsales" />
 							</div>
 						</div>
 
