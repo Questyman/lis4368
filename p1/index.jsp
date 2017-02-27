@@ -151,7 +151,7 @@ $(document).ready(function() {
 									stringLength: {
 											min: 1,
 											max: 15,
-											message: 'First name no more than 15 characters'
+											message: 'First name must contain no more than 15 characters'
 									},
 									regexp: {
 										//http://www.regular-expressions.info/
@@ -173,7 +173,7 @@ $(document).ready(function() {
 									stringLength: {
 											min: 1,
 											max: 30,
-											message: 'Last name no more than 30 characters'
+											message: 'Last name must contain no more than 30 characters'
 									},
 									regexp: {
 										regexp: /^[a-zA-Z\-]+$/,
@@ -181,6 +181,160 @@ $(document).ready(function() {
 									},
 							},
 					},
+
+				street: {
+							validators: {
+									notEmpty: {
+											message: 'Street required'
+									},
+									stringLength: {
+											min: 1,
+											max: 30,
+											message: 'Street must contain no more than 30 characters'
+									},
+									regexp: {
+										//http://www.regular-expressions.info/
+										//http://www.regular-expressions.info/quickstart.html
+										//http://www.regular-expressions.info/shorthand.html
+										//http://stackoverflow.com/questions/13283470/regex-for-allowing-alphanumeric-and-space
+										//alphanumeric (also, "+" prevents empty strings):
+										regexp: /^[a-zA-Z0-9 ,.\-]+$/,
+										message: 'Street can only contain letters, numbers, commas, periods, and hyphens.'
+									},
+							},
+					},
+
+					city: {
+								validators: {
+										notEmpty: {
+												message: 'City required'
+										},
+										stringLength: {
+												min: 1,
+												max: 30,
+												message: 'City must contain no more than 30 characters'
+										},
+										regexp: {
+											//http://www.regular-expressions.info/
+											//http://www.regular-expressions.info/quickstart.html
+											//http://www.regular-expressions.info/shorthand.html
+											//http://stackoverflow.com/questions/13283470/regex-for-allowing-alphanumeric-and-space
+											//alphanumeric (also, "+" prevents empty strings):
+											regexp: /^[a-zA-Z0-9 ,\-]+$/,
+											message: 'City can only contain letters, numbers, commas, spaces, and hyphens.'
+										},
+								},
+						},
+
+						state: {
+									validators: {
+											notEmpty: {
+													message: 'State required'
+											},
+											stringLength: {
+													min: 2,
+													max: 2,
+													message: 'State must contain only than 2 characters'
+											},
+											regexp: {
+												//http://www.regular-expressions.info/
+												//http://www.regular-expressions.info/quickstart.html
+												//http://www.regular-expressions.info/shorthand.html
+												//http://stackoverflow.com/questions/13283470/regex-for-allowing-alphanumeric-and-space
+												//alphanumeric (also, "+" prevents empty strings):
+												regexp: /^[a-zA-Z]+$/,
+												message: 'State can only contain letters.'
+											},
+									},
+							},
+
+							zip: {
+										validators: {
+												notEmpty: {
+														message: 'Zip required'
+												},
+												stringLength: {
+														min: 5,
+														max: 9,
+														message: 'Zip must contain 5 to 9 characters'
+												},
+												regexp: {
+													//http://www.regular-expressions.info/
+													//http://www.regular-expressions.info/quickstart.html
+													//http://www.regular-expressions.info/shorthand.html
+													//http://stackoverflow.com/questions/13283470/regex-for-allowing-alphanumeric-and-space
+													//alphanumeric (also, "+" prevents empty strings):
+													regexp: /^[0-9]+$/,
+													message: 'State can only contain numbers.'
+												},
+										},
+								},
+
+								phone: {
+											validators: {
+													notEmpty: {
+															message: 'Phone required'
+													},
+													stringLength: {
+															min: 10,
+															max: 10,
+															message: 'Phone must contain only than 10 characters'
+													},
+													regexp: {
+														//http://www.regular-expressions.info/
+														//http://www.regular-expressions.info/quickstart.html
+														//http://www.regular-expressions.info/shorthand.html
+														//http://stackoverflow.com/questions/13283470/regex-for-allowing-alphanumeric-and-space
+														//alphanumeric (also, "+" prevents empty strings):
+														regexp: /^[0-9]+$/,
+														message: 'Phone can only contain numbers.'
+													},
+											},
+									},
+
+									balance: {
+												validators: {
+														notEmpty: {
+																message: 'Balance required'
+														},
+														stringLength: {
+																min: 1,
+																max: 6,
+																message: 'Balance must contain no more than 6 digits, including decimal point'
+														},
+														regexp: {
+															//http://www.regular-expressions.info/
+															//http://www.regular-expressions.info/quickstart.html
+															//http://www.regular-expressions.info/shorthand.html
+															//http://stackoverflow.com/questions/13283470/regex-for-allowing-alphanumeric-and-space
+															//alphanumeric (also, "+" prevents empty strings):
+															regexp: /^[0-9.]+$/,
+															message: 'Balance can only contain numbers or decimal point.'
+														},
+												},
+										},
+
+									totalsales: {
+												validators: {
+														notEmpty: {
+																message: 'Total sales required'
+														},
+														stringLength: {
+																min: 1,
+																max: 6,
+																message: 'Total sales must contain no more than 6 digits, including decimal point'
+														},
+														regexp: {
+															//http://www.regular-expressions.info/
+															//http://www.regular-expressions.info/quickstart.html
+															//http://www.regular-expressions.info/shorthand.html
+															//http://stackoverflow.com/questions/13283470/regex-for-allowing-alphanumeric-and-space
+															//alphanumeric (also, "+" prevents empty strings):
+															regexp: /^[0-9.]+$/,
+															message: 'Total sales can only contain numbers or decimal point.'
+														},
+												},
+										},
 
 					email: {
 							validators: {
