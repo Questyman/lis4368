@@ -7,7 +7,7 @@
 <meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="My online portfolio that illustrates skills acquired while working through various project requirements.">
+	<meta name="description" content="My online portfolio that illustrates skills learned through completing project assignments.">
 	<meta name="author" content="Michael W. Gunter">
 	<link rel="icon" href="favicon.ico">
 
