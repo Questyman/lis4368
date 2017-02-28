@@ -45,9 +45,9 @@ h2
 
 	<div class="container">
 		 <div class="starter-template">
-						<div class="page-header">
-						<%@ include file="/global/header.jsp" %>
-						</div>
+				<div class="page-header">
+					<%@ include file="/global/header.jsp" %>
+				</div>
 
 <!-- Start Bootstrap Carousel  -->
 <div class="bs-example">
@@ -69,31 +69,29 @@ h2
        <!-- Carousel items -->
         <div class="carousel-inner">
 
-				 <div class="active item" style="background: url(img/robot.jpg) no-repeat left center; background-size: cover;">
+				 <div class="active item" style="background: url(a1/img/tomcat.png) no-repeat left center; background-size: cover;">
 					 <div class="container">
 						 <div class="carousel-caption">
-								<h3>First slide label.</h3>
-							 <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget.</p>
-							 <a class="btn btn-large btn-primary" href="#">Learn more</a>
+								<h3>Installation of Apache Tomcat</h3>
+							 <p class="lead">This page shows a screenshot of a successful installation of Apache Tomcat.</p>
+							 <a class="btn btn-large btn-primary" href="a1/">Check it out!</a>
 						 </div>
 					 </div>
 				 </div>
 
-            <div class="item">
-                <h2>Slide 2</h2>
+            <div class="item" style="background: url(a3/img/a3.png) no-repeat left center; background-size: cover;">
                 <div class="carousel-caption">
-                  <h3>Second slide label</h3>
-                  <p>Aliquam sit amet gravida nibh, facilisis gravida odio.</p>
-						 <img src="img/slide2.png" alt="Slide 2">
-                </div>
+                  <h3>Database Creation</h3>
+                  <p>This page demonstrates my master of basic concepts relating to the design and development of databases.</p>
+				  <a class="btn btn-large btn-primary" href="a3/">Check it out!</a>
+				</div>
             </div>
 
-            <div class="item">
-                <h2>Slide 3</h2>
+            <div class="item" style="background: url(a2/img/using_servlets.png) no-repeat left center; background-size: cover;">
                 <div class="carousel-caption">
-                  <h3>Third slide label</h3>
-                  <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-						 <img src="img/slide3.png" class="img-responsive" alt="Slide 3">
+                  <h3>Servlet Compilation and Utilization</h3>
+                  <p>This page shows my understanding of concepts related to the creation of servlets.</p>
+				  <a class="btn btn-large btn-primary" href="a2/">Check it out!</a>
                 </div>
             </div>
 

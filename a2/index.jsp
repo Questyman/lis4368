@@ -13,23 +13,23 @@
 
 	<title>LIS4368 - Assignment1</title>
 
-	<%@ include file="/css/include_css.jsp" %>		
-	
+	<%@ include file="/css/include_css.jsp" %>
+
 </head>
 <body>
 
 <!-- display application path -->
 <% //= request.getContextPath()%>
-	
+
 <!-- can also find path like this...<a href="${pageContext.request.contextPath}${'/a5/index.jsp'}">A5</a> -->
 
-	<%@ include file="/global/nav.jsp" %>	
+	<%@ include file="/global/nav.jsp" %>
 
 	<div class="container">
 		<div class="starter-template">
 			<div class="row">
 				<div class="col-sm-8 col-sm-offset-2">
-					
+
 					<div class="page-header">
 						<%@ include file="global/header.jsp" %>
 					</div>
@@ -41,8 +41,6 @@
 					<b>Database Connectivity Using Servlets:</b><br />
 					<img src="img/database_connectivity1.png" class="img-responsive" alt="Database Connectivity Using Servlets" />
 				<br />
-					<img src="img/database_connectivity2.png" class="img-responsive" alt="Database Connectivity Using Servlets" />
-
 				</div>
 			</div>
 
@@ -51,7 +49,7 @@
 	</div> <!-- end starter-template -->
  </div> <!-- end container -->
 
- 	<%@ include file="/js/include_js.jsp" %>		
+ 	<%@ include file="/js/include_js.jsp" %>
 
 </body>
 </html>
