@@ -34,7 +34,7 @@
 						<%@ include file="global/header.jsp" %>
 					</div>
 
-					<h2>Customers</h2>
+					<h2>Customer</h2>
 
 					<form id="add_customer_form" method="post" class="form-horizontal" action="#">
 
