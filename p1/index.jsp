@@ -120,6 +120,7 @@
 								<button type="submit" class="btn btn-primary" name="signup" value="Sign up">Submit</button>
 							</div>
 						</div>
+
 					</form>
 				</div>
 			</div>
@@ -193,13 +194,8 @@ $(document).ready(function() {
 											message: 'Street must contain no more than 30 characters'
 									},
 									regexp: {
-										//http://www.regular-expressions.info/
-										//http://www.regular-expressions.info/quickstart.html
-										//http://www.regular-expressions.info/shorthand.html
-										//http://stackoverflow.com/questions/13283470/regex-for-allowing-alphanumeric-and-space
-										//alphanumeric (also, "+" prevents empty strings):
 										regexp: /^[a-zA-Z0-9 ,.\-]+$/,
-										message: 'Street can only contain letters, numbers, commas, periods, and hyphens.'
+										message: 'Street can only contain letters, numbers, commas, periods, or hyphens.'
 									},
 							},
 					},
@@ -215,11 +211,6 @@ $(document).ready(function() {
 												message: 'City must contain no more than 30 characters'
 										},
 										regexp: {
-											//http://www.regular-expressions.info/
-											//http://www.regular-expressions.info/quickstart.html
-											//http://www.regular-expressions.info/shorthand.html
-											//http://stackoverflow.com/questions/13283470/regex-for-allowing-alphanumeric-and-space
-											//alphanumeric (also, "+" prevents empty strings):
 											regexp: /^[a-zA-Z0-9 ,\-]+$/,
 											message: 'City can only contain letters, numbers, commas, spaces, and hyphens.'
 										},
@@ -237,11 +228,6 @@ $(document).ready(function() {
 													message: 'State must contain only than 2 characters'
 											},
 											regexp: {
-												//http://www.regular-expressions.info/
-												//http://www.regular-expressions.info/quickstart.html
-												//http://www.regular-expressions.info/shorthand.html
-												//http://stackoverflow.com/questions/13283470/regex-for-allowing-alphanumeric-and-space
-												//alphanumeric (also, "+" prevents empty strings):
 												regexp: /^[a-zA-Z]+$/,
 												message: 'State can only contain letters.'
 											},
@@ -259,11 +245,6 @@ $(document).ready(function() {
 														message: 'Zip must contain 5 to 9 characters'
 												},
 												regexp: {
-													//http://www.regular-expressions.info/
-													//http://www.regular-expressions.info/quickstart.html
-													//http://www.regular-expressions.info/shorthand.html
-													//http://stackoverflow.com/questions/13283470/regex-for-allowing-alphanumeric-and-space
-													//alphanumeric (also, "+" prevents empty strings):
 													regexp: /^[0-9]+$/,
 													message: 'State can only contain numbers.'
 												},
@@ -281,11 +262,6 @@ $(document).ready(function() {
 															message: 'Phone must contain only than 10 characters'
 													},
 													regexp: {
-														//http://www.regular-expressions.info/
-														//http://www.regular-expressions.info/quickstart.html
-														//http://www.regular-expressions.info/shorthand.html
-														//http://stackoverflow.com/questions/13283470/regex-for-allowing-alphanumeric-and-space
-														//alphanumeric (also, "+" prevents empty strings):
 														regexp: /^[0-9]+$/,
 														message: 'Phone can only contain numbers.'
 													},
@@ -299,16 +275,11 @@ $(document).ready(function() {
 														},
 														stringLength: {
 																min: 1,
-																max: 6,
+																max: 7,
 																message: 'Balance must contain no more than 6 digits, including decimal point'
 														},
 														regexp: {
-															//http://www.regular-expressions.info/
-															//http://www.regular-expressions.info/quickstart.html
-															//http://www.regular-expressions.info/shorthand.html
-															//http://stackoverflow.com/questions/13283470/regex-for-allowing-alphanumeric-and-space
-															//alphanumeric (also, "+" prevents empty strings):
-															regexp: /^[0-9.]+$/,
+															regexp: /^[0-9\.]+$/,
 															message: 'Balance can only contain numbers or decimal point.'
 														},
 												},
@@ -321,16 +292,11 @@ $(document).ready(function() {
 														},
 														stringLength: {
 																min: 1,
-																max: 6,
+																max: 7,
 																message: 'Total sales must contain no more than 6 digits, including decimal point'
 														},
 														regexp: {
-															//http://www.regular-expressions.info/
-															//http://www.regular-expressions.info/quickstart.html
-															//http://www.regular-expressions.info/shorthand.html
-															//http://stackoverflow.com/questions/13283470/regex-for-allowing-alphanumeric-and-space
-															//alphanumeric (also, "+" prevents empty strings):
-															regexp: /^[0-9.]+$/,
+															regexp: /^[0-9\.]+$/,
 															message: 'Total sales can only contain numbers or decimal point.'
 														},
 												},
