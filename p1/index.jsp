@@ -271,7 +271,7 @@ $(document).ready(function() {
 									balance: {
 												validators: {
 														notEmpty: {
-																message: 'Balance required'
+																message: 'Balance is required'
 														},
 														stringLength: {
 																min: 1,
