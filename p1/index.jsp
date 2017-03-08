@@ -225,7 +225,7 @@ $(document).ready(function() {
 											stringLength: {
 													min: 2,
 													max: 2,
-													message: 'State must contain only than 2 characters'
+													message: 'State must contain only 2 characters'
 											},
 											regexp: {
 												regexp: /^[a-zA-Z]+$/,

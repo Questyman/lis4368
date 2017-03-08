@@ -17,9 +17,21 @@
 #### README.md file should include the following items:
 
 * Link of index.jsp
+* Screenshot of valid data
+* Screenshot of invalid data
 
 #### Assignment Links:
 
 *Link of index.jsp*:
 
 [index.jsp](./index.jsp)
+
+### Valid and Invalid data
+
+*Screenshot of valid data:
+
+![Valid Data](img/valid.png)
+
+*Screenshot of invalid data:
+
+![Invalid Data](img/invalid.png)
