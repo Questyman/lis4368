@@ -14,8 +14,8 @@
 	<title>LIS4368 - Assignment1</title>
 
 <<<<<<< HEAD
-	<%@ include file="/css/include_css.jsp" %>		
-	
+	<%@ include file="/css/include_css.jsp" %>
+
 =======
 	<%@ include file="/css/include_css.jsp" %>
 
@@ -26,10 +26,10 @@
 <!-- display application path -->
 <% //= request.getContextPath()%>
 <<<<<<< HEAD
-	
+
 <!-- can also find path like this...<a href="${pageContext.request.contextPath}${'/a5/index.jsp'}">A5</a> -->
 
-	<%@ include file="/global/nav.jsp" %>	
+	<%@ include file="/global/nav.jsp" %>
 =======
 
 <!-- can also find path like this...<a href="${pageContext.request.contextPath}${'/a5/index.jsp'}">A5</a> -->
@@ -42,7 +42,7 @@
 			<div class="row">
 				<div class="col-sm-8 col-sm-offset-2">
 <<<<<<< HEAD
-					
+
 =======
 
 >>>>>>> d6e8795a0f09e67f90d31d3b55515dfdc6fef2b3
@@ -71,9 +71,9 @@
  </div> <!-- end container -->
 
 <<<<<<< HEAD
- 	<%@ include file="/js/include_js.jsp" %>		
+ 	<%@ include file="js/include_js.jsp" %>
 =======
- 	<%@ include file="/js/include_js.jsp" %>
+ 	<%@ include file="js/include_js.jsp" %>
 >>>>>>> d6e8795a0f09e67f90d31d3b55515dfdc6fef2b3
 
 </body>

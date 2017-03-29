@@ -16,7 +16,7 @@
 	<title>My Online Portfolio</title>
 
 <<<<<<< HEAD
-	<%@ include file="/css/include_css.jsp" %>		
+	<%@ include file="/css/include_css.jsp" %>
 =======
 	<%@ include file="/css/include_css.jsp" %>
 >>>>>>> d6e8795a0f09e67f90d31d3b55515dfdc6fef2b3
@@ -26,15 +26,15 @@
 h2
 {
 <<<<<<< HEAD
-	margin: 0;     
+	margin: 0;
 	color: #666;
 	padding-top: 90px;
 	font-size: 52px;
-	font-family: "trebuchet ms", sans-serif;    
+	font-family: "trebuchet ms", sans-serif;
 }
 .item
 {
-	background: #333;    
+	background: #333;
 =======
 	margin: 0;
 	color: #666;
@@ -59,16 +59,16 @@ h2
 }
 </style>
 <<<<<<< HEAD
-	
+
 </head>
 <body>
-	
-	<%@ include file="/global/nav_global.jsp" %>	
-	
+
+	<%@ include file="/global/nav_global.jsp" %>
+
 	<div class="container">
 		 <div class="starter-template">
 						<div class="page-header">
-						<%@ include file="/global/header.jsp" %>							
+						<%@ include file="/global/header.jsp" %>
 						</div>
 =======
 
@@ -93,9 +93,9 @@ h2
 		data-pause="hover"
 		data-wrap="true"
 <<<<<<< HEAD
-		data-keyboard="true"			
+		data-keyboard="true"
 		data-ride="carousel">
-		
+
 =======
 		data-keyboard="true"
 		data-ride="carousel">
@@ -107,7 +107,7 @@ h2
             <li data-target="#myCarousel" data-slide-to="1"></li>
             <li data-target="#myCarousel" data-slide-to="2"></li>
 <<<<<<< HEAD
-        </ol>   
+        </ol>
        <!-- Carousel items -->
         <div class="carousel-inner">
 
@@ -119,14 +119,14 @@ h2
 							 <a class="btn btn-large btn-primary" href="#">Learn more</a>
 						 </div>
 					 </div>
-				 </div>					
+				 </div>
 
             <div class="item">
                 <h2>Slide 2</h2>
                 <div class="carousel-caption">
                   <h3>Second slide label</h3>
                   <p>Aliquam sit amet gravida nibh, facilisis gravida odio.</p>
-						 <img src="img/slide2.png" alt="Slide 2">									
+						 <img src="img/slide2.png" alt="Slide 2">
                 </div>
             </div>
 
@@ -135,7 +135,7 @@ h2
                 <div class="carousel-caption">
                   <h3>Third slide label</h3>
                   <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-						 <img src="img/slide3.png" class="img-responsive" alt="Slide 3">									
+						 <img src="img/slide3.png" class="img-responsive" alt="Slide 3">
 =======
         </ol>
        <!-- Carousel items -->
@@ -187,7 +187,7 @@ h2
 
  	<%@ include file="/js/include_js.jsp" %>
 <<<<<<< HEAD
-	
+
 =======
 
 >>>>>>> d6e8795a0f09e67f90d31d3b55515dfdc6fef2b3

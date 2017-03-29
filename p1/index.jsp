@@ -130,7 +130,7 @@
 	</div> <!-- end starter-template -->
  </div> <!-- end container -->
 
- 	<%@ include file="/js/include_js.jsp" %>
+ 	<%@ include file="js/include_js.jsp" %>
 
 <script type="text/javascript">
 $(document).ready(function() {

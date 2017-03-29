@@ -12,39 +12,33 @@
 	<link rel="icon" href="favicon.ico">
 
 	<title>LIS4368 - Assignment1</title>
-<<<<<<< HEAD
-=======
 
 	<%@ include file="/css/include_css.jsp" %>
->>>>>>> d6e8795a0f09e67f90d31d3b55515dfdc6fef2b3
 
-	<%@ include file="/css/include_css.jsp" %>		
-	
+	<%@ include file="/css/include_css.jsp" %>
+
 </head>
 <body>
 
 <!-- display application path -->
 <% //= request.getContextPath()%>
-	
+
 <!-- can also find path like this...<a href="${pageContext.request.contextPath}${'/a5/index.jsp'}">A5</a> -->
 
-	<%@ include file="/global/nav.jsp" %>	
+	<%@ include file="/global/nav.jsp" %>
 
 	<div class="container">
 		<div class="starter-template">
 			<div class="row">
 				<div class="col-sm-8 col-sm-offset-2">
-					
+
 					<div class="page-header">
 						<%@ include file="global/header.jsp" %>
 					</div>
 
 					<b>JDK Installation:</b><br />
-<<<<<<< HEAD
 					<img src="img/jdk_install.png" class="img-responsive" alt="JDK Installation" />
-=======
 					<img src="img/java_hello.png" class="img-responsive" alt="JDK Installation" />
->>>>>>> d6e8795a0f09e67f90d31d3b55515dfdc6fef2b3
 
 					<br /> <br />
 					<b>Tomcat Installation:</b><br />
@@ -57,7 +51,7 @@
 	</div> <!-- end starter-template -->
  </div> <!-- end container -->
 
- 	<%@ include file="/js/include_js.jsp" %>		
+ 	<%@ include file="js/include_js.jsp" %>
 
 </body>
 </html>
