@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <!--
-"Time-stamp: <Sun, 02-19-17, 12:24:47 Eastern Standard Time>"
+"Time-stamp: <Sun, 02-19-17, 12:36:56 Eastern Standard Time>"
 //-->
 <meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -34,12 +34,15 @@
 						<%@ include file="global/header.jsp" %>
 					</div>
 
-					<b>JDK Installation:</b><br />
-					<img src="img/jdk_install.png" class="img-responsive" alt="JDK Installation" />
+					<b>Servlet Compilation and Usage:</b><br />
+					<img src="img/using_servlets.png" class="img-responsive" alt="Using Servlets" />
 
 					<br /> <br />
-					<b>Tomcat Installation:</b><br />
-					<img src="img/tomcat.png" class="img-responsive" alt="Tomcat Installation" />
+					<b>Database Connectivity Using Servlets:</b><br />
+					<img src="img/database_connectivity1.png" class="img-responsive" alt="Database Connectivity Using Servlets" />
+				<br />
+					<img src="img/database_connectivity2.png" class="img-responsive" alt="Database Connectivity Using Servlets" />
+
 				</div>
 			</div>
 

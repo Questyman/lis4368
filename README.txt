@@ -1,0 +1,4 @@
+- *NOTE:* *BEFORE* completing steps below, *BE CAREFUL* when doing so! *BE SURE* to compare file contents of *your* existing directories, *BEFORE* overwriting. 
+- Change *all* student_files directories to assignment name: For example, a1_student_files becomes a1
+- Copy all subdirectories, including those that do not contain "student_files" into *your* lis4368, (i.e., do not change their names). For example, css, fonts, global, img, js
+- Lastly, include your main lis4368 README file here

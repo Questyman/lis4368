@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <!--
-"Time-stamp: <Sun, 02-19-17, 12:24:47 Eastern Standard Time>"
+"Time-stamp: <Sun, 02-19-17, 12:49:34 Eastern Standard Time>"
 //-->
 <meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -34,12 +34,15 @@
 						<%@ include file="global/header.jsp" %>
 					</div>
 
-					<b>JDK Installation:</b><br />
-					<img src="img/jdk_install.png" class="img-responsive" alt="JDK Installation" />
+					<b>Petstore Database (Entity Relationship Diagram):</b><br />
+					<img src="img/a3.png" class="img-responsive" alt="A3 ERD" />
 
 					<br /> <br />
-					<b>Tomcat Installation:</b><br />
-					<img src="img/tomcat.png" class="img-responsive" alt="Tomcat Installation" />
+					<b>MySQL Workbench and SQL Files:</b><br />
+					<a href="docs/a3.mwb">Petstore MySQL Workbench File</a>
+				<br />
+					<a href="docs/a3.sql">Petstore SQL File</a>				
+
 				</div>
 			</div>
 
@@ -49,6 +52,6 @@
  </div> <!-- end container -->
 
  	<%@ include file="/js/include_js.jsp" %>		
-
+ 
 </body>
 </html>

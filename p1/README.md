@@ -8,27 +8,30 @@
 
 ## Michael Gunter
 
-### Assignment #3 Requirements:
+### Project #1 Requirements:
 
 **Two Parts:**
-1. MySQL ERD
-2. SQL Statements
+1. jQuery Form Validation
+2. Remote Repos
 
 #### README.md file should include the following items:
 
-* Link of A3 Entity Relationship Diagram
-* Link of A3 SQL Statements
+* Link of index.jsp
+* Screenshot of valid data
+* Screenshot of invalid data
 
 #### Assignment Links:
 
-*Link of a3.mwb*:
+*Link of index.jsp*:
 
-[a3.mwb](./a3.mwb)
+[index.jsp](./index.jsp)
 
-*Link of a3.sql*:
+### Valid and Invalid data
 
-[a3.sql](./a3.sql)
+*Screenshot of valid data:
 
-*Screenshot of ERD*:
+![Valid Data](img/valid.png)
 
-![ERD Screenshot](./img/a3.png)
+*Screenshot of invalid data:
+
+![Invalid Data](img/invalid.png)
