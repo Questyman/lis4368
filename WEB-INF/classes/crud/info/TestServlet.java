@@ -5,7 +5,7 @@ Windows:
   cd to C:\tomcat\webapps\lis4368\WEB-INF\classes
   javac -cp .;c:\tomcat\lib\servlet-api.jar crud/info/TestServlet.java
 
-Mac: 	
+Mac:
   cd to /Applications/tomcat/webapps/lis4368/WEB-INF/classes
   javac -cp .:/Applications/tomcat/lib/servlet-api.jar crud/info/TestServlet.java
 
@@ -25,22 +25,22 @@ public class TestServlet extends HttpServlet
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 		throws ServletException, IOException
 	{
-		response.setContentType("text/html");        
-		PrintWriter out = response.getWriter();        
+		response.setContentType("text/html");
+		PrintWriter out = response.getWriter();
 		try
 			{
 				out.println("<h1>HTML from servlet</h1>");
-			} 
+			}
 		finally
 			{
 				out.close();
 			}
 	}
-    
+
 	@Override
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 		throws ServletException, IOException
 	{
 		doPost(request, response);
-	}    
+	}
 }
