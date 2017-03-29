@@ -1,7 +1,7 @@
 <%@ page import="java.util.Date, java.util.TimeZone, java.text.SimpleDateFormat" %>
 
 <nav class="navbar navbar-inverse navbar-fixed-top">
-		<div class="container">			
+		<div class="container">
 			<div class="navbar-header">
 				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
 					<span class="sr-only">Toggle navigation</span>
@@ -14,7 +14,7 @@
 
 			<div id="navbar" class="collapse navbar-collapse">
 				<ul class="nav navbar-nav">
-					<li class="active"><a href="index.jsp">CRSXXXX</a></li>
+					<li class="active"><a href="index.jsp">LIS4368</a></li>
 					<li><a href="a1/index.jsp">A1</a></li>
 					<li><a href="a2/index.jsp">A2</a></li>
 					<li><a href="a3/index.jsp">A3</a></li>
@@ -22,7 +22,7 @@
 					<li><a href="a5/index.jsp">A5</a></li>
 					<li><a href="p1/index.jsp">P1</a></li>
 					<li><a href="p2/index.jsp">P2</a></li>
-					<li><a href="test/index.jsp">Test</a></li>					
+					<li><a href="test/index.jsp">Test</a></li>
 				</ul>
 			</div><!--/.nav-collapse -->
 		</div>

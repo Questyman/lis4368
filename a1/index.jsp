@@ -12,6 +12,11 @@
 	<link rel="icon" href="favicon.ico">
 
 	<title>LIS4368 - Assignment1</title>
+<<<<<<< HEAD
+=======
+
+	<%@ include file="/css/include_css.jsp" %>
+>>>>>>> d6e8795a0f09e67f90d31d3b55515dfdc6fef2b3
 
 	<%@ include file="/css/include_css.jsp" %>		
 	
@@ -35,7 +40,11 @@
 					</div>
 
 					<b>JDK Installation:</b><br />
+<<<<<<< HEAD
 					<img src="img/jdk_install.png" class="img-responsive" alt="JDK Installation" />
+=======
+					<img src="img/java_hello.png" class="img-responsive" alt="JDK Installation" />
+>>>>>>> d6e8795a0f09e67f90d31d3b55515dfdc6fef2b3
 
 					<br /> <br />
 					<b>Tomcat Installation:</b><br />
