@@ -14,14 +14,14 @@
 
 #### README.md file should include the following items:
 
-* Screenshot of Filled Form
+* Screenshot of Failed Form Validation
 * Screenshot of Successful Form Validation
 
 
 #### Assignment Links:
 
 
-*Screenshot of Filled Form*:
+*Screenshot of Failed Form Validation*:
 
 ![Form Filled](./img/a4a.png)
 

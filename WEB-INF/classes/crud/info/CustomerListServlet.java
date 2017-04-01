@@ -56,14 +56,11 @@ public class CustomerListServlet extends HttpServlet
         String phone = request.getParameter("phone");
         String email = request.getParameter("email");
         String balance = request.getParameter("balance");
-        String totalSales = request.getParameter("totalSales");
+        String totalSales = request.getParameter("total_sales");
         String notes = request.getParameter("notes");
 
 
 				String message; //display entry issues encountered to user
-
-				// store data in Customer object: user
-				Customer user = new Customer(firstName, lastName, email);
 
         //store data in Customer object: user
         Customer user = new Customer(firstName, lastName, street, city, state, zip, phone, email, balance, totalSales, notes);
@@ -78,7 +75,7 @@ public class CustomerListServlet extends HttpServlet
             city == null || state == null || zip == null || phone == null ||
             email == null || balance == null || totalSales == null ||
 
-						firstName.isEmpty() || lastName.isEmpty() || email.isEmpty()) ||
+						firstName.isEmpty() || lastName.isEmpty() || email.isEmpty() ||
             city.isEmpty() || street.isEmpty() || state.isEmpty() || zip.isEmpty()
             || phone.isEmpty() || balance.isEmpty() || totalSales.isEmpty()
             )
