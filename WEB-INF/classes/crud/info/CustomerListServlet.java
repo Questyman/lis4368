@@ -19,7 +19,9 @@ import javax.servlet.http.*;
 import javax.servlet.annotation.*;
 
 import crud.business.Customer;
+import crud.data.CustomerDB;
 
+//servlet mapping for Servlet 3.0
 //servlet CustomerList is mapped to the URL pattern /customerList. When accessing this servlet, it will return a message.
 @WebServlet("/customerList")
 public class CustomerListServlet extends HttpServlet
@@ -47,7 +49,8 @@ public class CustomerListServlet extends HttpServlet
 			{
 				// get parameters from the request (data conversions not required here)
 				//Reality-check: zip should be int, phone long, balance and totalSales BigDecimal data types
-				String firstName = request.getParameter("fname");
+        //getParameter() method accepts values from control name attribute
+        String firstName = request.getParameter("fname");
 				String lastName = request.getParameter("lname");
 				String street = request.getParameter("street");
         String city = request.getParameter("city");
@@ -87,6 +90,7 @@ public class CustomerListServlet extends HttpServlet
 					{
 						message = "";
 						url = "/thanks.jsp";
+            CustomerDB.insert(user);
 					}
 				request.setAttribute("user", user);
 				request.setAttribute("message", message);

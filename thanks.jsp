@@ -9,7 +9,7 @@
 	<meta name="author" content="Mark K. Jowett, Ph.D.">
 	<link rel="icon" href="favicon.ico">
 
-	<title>LIS 4368 - JSP Forms</title>
+	<title>CRSXXXX - JSP Forms</title>
 
 	<%@ include file="/css/include_css.jsp" %>
 
@@ -32,18 +32,21 @@
     <p>Here is the information that you entered:</p>
 
 		<div class="col-xs-12 col-sm-offset-4 text-left">
+			<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
-			<label>FName:</label> ${user.fname}<br />
-			<label>LName:</label> ${user.lname}<br />
-			<label>Street:</label> ${user.street}<br />
-			<label>City:</label> ${user.city}<br />
-			<label>State:</label> ${user.state}<br />
-			<label>Zip:</label> ${user.zip}<br />
-			<label>Phone:</label> ${user.phone}<br />
-			<label>Email:</label> ${user.email}<br />
-			<label>Balance:</label> ${user.balance}<br />
-			<label>Total Sales:</label> ${user.totalSales}<br />
-			<label>Notes:</label> ${user.notes}<br />
+			<% //<c:out... prevents cross-site scripting (XSS) attack (escapes output) %>
+			<label>FName:</label> <c:out value="${user.fname}" /><br />
+			<label>LName:</label> <c:out value="${user.lname}" /><br />
+			<label>Street:</label> <c:out value="${user.street}" /><br />
+			<label>City:</label> <c:out value="${user.city}" /><br />
+			<label>State:</label> <c:out value="${user.state}" /><br />
+			<label>Zip:</label> <c:out value="${user.zip}" /><br />
+			<label>Phone:</label> <c:out value="${user.phone}" /><br />
+			<label>Email:</label> <c:out value="${user.email}" /><br />
+			<label>Balance:</label> <c:out value="${user.balance}" /><br />
+			<label>Total Sales:</label> <c:out value="${user.totalSales}" /><br />
+			<label>Notes:</label> <c:out value="${user.notes}" /><br />
+
 
 			<p>To enter another email address, <br />
 				click the Back button in your browser or Return button below.</p>
