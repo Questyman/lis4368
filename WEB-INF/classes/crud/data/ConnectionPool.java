@@ -7,14 +7,14 @@ import javax.naming.NamingException;
 
 public class ConnectionPool
 {
-  public static ConnectionPool pool = null;
-  public static DataSource dataSource = null;
+  private static ConnectionPool pool = null;
+  private static DataSource dataSource = null;
 
   private ConnectionPool()
   {
     try
     {
-      InitialContext lc = new InitialContext();
+      InitialContext ic = new InitialContext();
       dataSource = (DataSource) ic.lookup("java:/comp/env/jdbc/mg14e");
     }
     catch (NamingException e){
@@ -25,7 +25,7 @@ public class ConnectionPool
   public static synchronized ConnectionPool getInstance(){
     if(pool == null)
     {
-      pool new ConnectionPool();
+      pool = new ConnectionPool();
 
     }
   return pool;
