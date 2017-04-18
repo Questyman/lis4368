@@ -34,7 +34,7 @@ public class DBUtil
   public static void closeResultSet(ResultSet rs){
     try
     {
-      if (ps != null){
+      if (rs != null){
         rs.close();
       }
     }

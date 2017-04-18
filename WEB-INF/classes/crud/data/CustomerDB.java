@@ -37,7 +37,7 @@ public class CustomerDB
       System.out.println(e);
       return 0;
     } finally {
-      DBUtil.closePrepatedStatement(ps);
+      DBUtil.closePreparedStatement(ps);
       pool.freeConnection(connection);
     }
   }
@@ -81,7 +81,7 @@ public class CustomerDB
     try
     {
       ps = connection.prepareStatement(query);
-      ps.setString(1, email);
+      ps.setString(1, customer.getEmail());
 
       return ps.executeUpdate();
     }
@@ -91,7 +91,7 @@ public class CustomerDB
       return 0;
     }
     finally{
-      DBUtil.closePrepatedStatement(ps);
+      DBUtil.closePreparedStatement(ps);
       pool.freeConnection(connection);
     }
   }
@@ -99,7 +99,7 @@ public class CustomerDB
   //check if email exists method
   public static boolean emailExists(String email)
   {
-    Connection pool = ConnectionPool.getInstance();
+    ConnectionPool pool = ConnectionPool.getInstance();
     Connection connection = pool.getConnection();
     PreparedStatement ps = null;
     ResultSet rs = null;
@@ -114,13 +114,13 @@ public class CustomerDB
     }
     catch (SQLException e)
     {
-      System.out.printlb(e);
+      System.out.println(e);
       return false;
     }
     finally
     {
       DBUtil.closeResultSet(rs);
-      DBUtil.closePrepatedStatement(ps);
+      DBUtil.closePreparedStatement(ps);
       pool.freeConnection(connection);
     }
   }
@@ -157,7 +157,7 @@ public class CustomerDB
     finally
     {
       DBUtil.closeResultSet(rs);
-      DBUtil.closePrepatedStatement(ps);
+      DBUtil.closePreparedStatement(ps);
       pool.freeConnection(connection);
     }
    }
@@ -178,23 +178,23 @@ public class CustomerDB
        ArrayList<Customer> customers = new ArrayList<Customer>();
        while (rs.next())
        {
-         customer customer = new Customer();
+         Customer customer = new Customer();
          customer.setFname(rs.getString("fname"));
          customer.setLname(rs.getString("lname"));
          customer.setEmail(rs.getString("email"));
-         customer.add(customer);
+         customers.add(customer);
        }
        return customers;
      }
      catch (SQLException e)
      {
        System.out.println(e);
-       return null();
+       return null;
      }
      finally
      {
        DBUtil.closeResultSet(rs);
-       DBUtil.closePrepatedStatement(ps);
+       DBUtil.closePreparedStatement(ps);
        pool.freeConnection(connection);
      }
    }
