@@ -20,6 +20,9 @@
 
 #### Assignment Links:
 
+*Screenshot of pre-valid form entry*:
+
+![Pre-valid User Form Entry](./img/a5c.png)
 
 *Screenshot of Valid User Form Entry*:
 
