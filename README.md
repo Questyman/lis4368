@@ -30,10 +30,13 @@
     - Remote Repos (Inital Push)
 
 5. [A4 README.md](a4/README.md "My A4 README.md file")
-  - Form Data
-  - Form Validation
-  - Model View Controller at Work
+    - Form Data
+    - Form Validation
+    - Model View Controller at Work
 
 6. [A5 README.md](a5/README.md "My A5 README.md file")
+    - Server-side Form Validation
+    - Database Functionality (Create, Read, Update, Delete)
+    - Data Entry to Database
 
 7. [P2 README.md](p2/README.md "My P2 README.md file")
