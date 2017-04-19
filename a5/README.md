@@ -14,6 +14,7 @@
 
 #### README.md file should include the following items:
 
+* Screenshot of pre-valid User Form Entry
 * Screenshot of Valid User Form Entry
 * Screenshot of Passed Form Validation
 
