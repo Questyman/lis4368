@@ -9,20 +9,20 @@
 	<meta name="author" content="Mark K. Jowett, Ph.D.">
 	<link rel="icon" href="favicon.ico">
 
-	<title>LIS 4368 - JSP Forms</title>
+	<title>CRSXXXX - JSP Forms</title>
 
-	<%@ include file="/css/include_css.jsp" %>
-
+	<%@ include file="/css/include_css.jsp" %>		
+	
 </head>
 <body>
 
-	<%@ include file="/global/nav_global.jsp" %>
+	<%@ include file="/global/nav_global.jsp" %>	
 
 	<div class="container">
 		<div class="starter-template">
 			<div class="row">
 				<div class="col-xs-12">
-
+					
 					<div class="page-header">
 						<%@ include file="/global/header.jsp" %>
 					</div>
@@ -35,24 +35,15 @@
 
 			<label>FName:</label> ${user.fname}<br />
 			<label>LName:</label> ${user.lname}<br />
-			<label>Street:</label> ${user.street}<br />
-			<label>City:</label> ${user.city}<br />
-			<label>State:</label> ${user.state}<br />
-			<label>Zip:</label> ${user.zip}<br />
-			<label>Phone:</label> ${user.phone}<br />
-			<label>Email:</label> ${user.email}<br />
-			<label>Balance:</label> ${user.balance}<br />
-			<label>Total Sales:</label> ${user.totalSales}<br />
-			<label>Notes:</label> ${user.notes}<br />
 
 			<p>To enter another email address, <br />
 				click the Back button in your browser or Return button below.</p>
-
+							
 			<form action="" method="post">
 				<input type="hidden" name="action" value="join">
 				<input type="submit" value="Return">
 			</form>
-
+			
 		</div>
 
 				</div>
@@ -63,7 +54,7 @@
 	</div> <!-- end starter-template -->
  </div> <!-- end container -->
 
- 	<%--@ include file="/js/include_js.jsp" --%>
-
+ 	<%--@ include file="/js/include_js.jsp" --%>		 
+		
 </body>
 </html>

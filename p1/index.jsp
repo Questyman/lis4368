@@ -2,125 +2,73 @@
 <html lang="en">
 <head>
 <!--
-"Time-stamp: <Tue, 02-21-17, 21:58:59 Eastern Standard Time>"
+"Time-stamp: <Sat, 03-11-17, 14:37:04 Eastern Standard Time>"
 //-->
 <meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="My online portfolio that illustrates skills learned through completing project assignments.">
-	<meta name="author" content="Michael W. Gunter">
+	<meta name="description" content="My online portfolio that illustrates skills acquired while working through various project requirements.">
+	<meta name="author" content="Mark K. Jowett, Ph.D.">
 	<link rel="icon" href="favicon.ico">
 
-	<title>LIS4368 - Project 1</title>
+	<title>CRSXXXX - Project1 (Fix course number!)</title>
 
-	<%@ include file="/css/include_css.jsp" %>
+	<%@ include file="/css/include_css.jsp" %>		
 
 </head>
 <body>
 
 <!-- display application path -->
 <% //= request.getContextPath()%>
-
+	
 <!-- can also find path like this...<a href="${pageContext.request.contextPath}${'/a5/index.jsp'}">A5</a> -->
 
-	<%@ include file="/global/nav.jsp" %>
+	<%@ include file="/global/nav.jsp" %>	
 
 	<div class="container">
 		<div class="starter-template">
 			<div class="row">
-				<div class="col-sm-8 col-sm-offset-2">
-
+				<div class="col-xs-12">
+					
 					<div class="page-header">
 						<%@ include file="global/header.jsp" %>
 					</div>
-
-					<h2>Customer</h2>
-
+					
 					<form id="add_customer_form" method="post" class="form-horizontal" action="#">
 
 						<div class="form-group">
-							<label class="col-sm-3 control-label">FName:</label>
-							<div class="col-sm-5">
+							<label class="col-sm-4 control-label">FName:</label>
+							<div class="col-sm-4">
 								<input type="text" class="form-control" name="fname" />
 							</div>
 						</div>
 
 						<div class="form-group">
-							<label class="col-sm-3 control-label">LName:</label>
-							<div class="col-sm-5">
+							<label class="col-sm-4 control-label">LName:</label>
+							<div class="col-sm-4">
 								<input type="text" class="form-control" name="lname" />
 							</div>
-						</div>
+						</div>						
 
 						<div class="form-group">
-							<label class="col-sm-3 control-label">Street:</label>
-							<div class="col-sm-5">
-								<input type="text" class="form-control" name="street" />
-							</div>
-						</div>
-
-						<div class="form-group">
-							<label class="col-sm-3 control-label">City:</label>
-							<div class="col-sm-5">
-								<input type="text" class="form-control" name="city" />
-							</div>
-						</div>
-
-						<div class="form-group">
-							<label class="col-sm-3 control-label">State:</label>
-							<div class="col-sm-5">
-								<input type="text" class="form-control" name="state" />
-							</div>
-						</div>
-
-						<div class="form-group">
-							<label class="col-sm-3 control-label">Zip:</label>
-							<div class="col-sm-5">
-								<input type="text" class="form-control" name="zip" />
-							</div>
-						</div>
-
-						<div class="form-group">
-							<label class="col-sm-3 control-label">Phone:</label>
-							<div class="col-sm-5">
-								<input type="text" class="form-control" name="phone" />
-							</div>
-						</div>
-
-						<div class="form-group">
-							<label class="col-sm-3 control-label">Email:</label>
-							<div class="col-sm-5">
+							<label class="col-sm-4 control-label">Email:</label>
+							<div class="col-sm-4">
 								<input type="text" class="form-control" name="email" />
 							</div>
 						</div>
 
 						<div class="form-group">
-							<label class="col-sm-3 control-label">Balance:</label>
-							<div class="col-sm-5">
-								<input type="text" class="form-control" name="balance" />
-							</div>
-						</div>
-
-						<div class="form-group">
-							<label class="col-sm-3 control-label">Total Sales:</label>
-							<div class="col-sm-5">
-								<input type="text" class="form-control" name="totalsales" />
-							</div>
-						</div>
-
-						<div class="form-group">
-							<label class="col-sm-3 control-label">Notes:</label>
-							<div class="col-sm-5">
+							<label class="col-sm-4 control-label">Notes:</label>
+							<div class="col-sm-4">
 								<input type="text" class="form-control" maxlength="255" name="notes" />
 							</div>
 						</div>
-
+						
 						<div class="form-group">
-							<div class="col-sm-5 col-sm-offset-3">
+							<div class="col-sm-6 col-sm-offset-3">
 								<button type="submit" class="btn btn-primary" name="signup" value="Sign up">Submit</button>
 							</div>
 						</div>
-
 					</form>
 				</div>
 			</div>
@@ -130,8 +78,8 @@
 	</div> <!-- end starter-template -->
  </div> <!-- end container -->
 
- 	<%@ include file="js/include_js.jsp" %>
-
+ 	<%@ include file="/js/include_js.jsp" %>		
+ 
 <script type="text/javascript">
 $(document).ready(function() {
 
@@ -152,7 +100,7 @@ $(document).ready(function() {
 									stringLength: {
 											min: 1,
 											max: 15,
-											message: 'First name must contain no more than 15 characters'
+											message: 'First name no more than 15 characters'
 									},
 									regexp: {
 										//http://www.regular-expressions.info/
@@ -162,7 +110,7 @@ $(document).ready(function() {
 										//alphanumeric (also, "+" prevents empty strings):
 										regexp: /^[a-zA-Z\-]+$/,
 										message: 'First name can only contain letters and hyphens.'
-									},
+									},									
 							},
 					},
 
@@ -174,134 +122,15 @@ $(document).ready(function() {
 									stringLength: {
 											min: 1,
 											max: 30,
-											message: 'Last name must contain no more than 30 characters'
+											message: 'Last name no more than 30 characters'
 									},
 									regexp: {
 										regexp: /^[a-zA-Z\-]+$/,
 										message: 'Last name can only contain letters and hyphens'
-									},
+									},									
 							},
 					},
-
-				street: {
-							validators: {
-									notEmpty: {
-											message: 'Street required'
-									},
-									stringLength: {
-											min: 1,
-											max: 30,
-											message: 'Street must contain no more than 30 characters'
-									},
-									regexp: {
-										regexp: /^[a-zA-Z0-9 ,.\-]+$/,
-										message: 'Street can only contain letters, numbers, commas, periods, or hyphens.'
-									},
-							},
-					},
-
-					city: {
-								validators: {
-										notEmpty: {
-												message: 'City required'
-										},
-										stringLength: {
-												min: 1,
-												max: 30,
-												message: 'City must contain no more than 30 characters'
-										},
-										regexp: {
-											regexp: /^[a-zA-Z0-9 ,\-]+$/,
-											message: 'City can only contain letters, numbers, commas, spaces, and hyphens.'
-										},
-								},
-						},
-
-						state: {
-									validators: {
-											notEmpty: {
-													message: 'State required'
-											},
-											stringLength: {
-													min: 2,
-													max: 2,
-													message: 'State must contain only 2 characters'
-											},
-											regexp: {
-												regexp: /^[a-zA-Z]+$/,
-												message: 'State can only contain letters.'
-											},
-									},
-							},
-
-							zip: {
-										validators: {
-												notEmpty: {
-														message: 'Zip required'
-												},
-												stringLength: {
-														min: 5,
-														max: 9,
-														message: 'Zip must contain 5 to 9 characters'
-												},
-												regexp: {
-													regexp: /^[0-9]+$/,
-													message: 'State can only contain numbers.'
-												},
-										},
-								},
-
-								phone: {
-											validators: {
-													notEmpty: {
-															message: 'Phone required'
-													},
-													stringLength: {
-															min: 10,
-															max: 10,
-															message: 'Phone must contain only than 10 characters'
-													},
-													regexp: {
-														regexp: /^[0-9]+$/,
-														message: 'Phone can only contain numbers.'
-													},
-											},
-									},
-
-									balance: {
-												validators: {
-														notEmpty: {
-																message: 'Balance is required'
-														},
-														stringLength: {
-																min: 1,
-																max: 7,
-																message: 'Balance must contain no more than 6 digits, including decimal point'
-														},
-														regexp: {
-															regexp: /^[0-9\.]+$/,
-															message: 'Balance can only contain numbers or decimal point.'
-														},
-												},
-										},
-
-									totalsales: {
-												validators: {
-														notEmpty: {
-																message: 'Total sales required'
-														},
-														stringLength: {
-																min: 1,
-																max: 7,
-																message: 'Total sales must contain no more than 6 digits, including decimal point'
-														},
-														regexp: {
-															regexp: /^[0-9\.]+$/,
-															message: 'Total sales can only contain numbers or decimal point.'
-														},
-												},
-										},
-
+					
 					email: {
 							validators: {
 									notEmpty: {
@@ -315,7 +144,7 @@ $(document).ready(function() {
 											message: 'Must include valid email address'
 									},
 									*/
-
+								
 									stringLength: {
 											min: 1,
 											max: 100,
@@ -324,7 +153,7 @@ $(document).ready(function() {
 									regexp: {
 									regexp: /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/,
 										message: 'Must include valid email'
-									},
+									},																		
 							},
 					},
 			}

@@ -13,39 +13,23 @@
 
 	<title>LIS4368 - Assignment1</title>
 
-<<<<<<< HEAD
-	<%@ include file="/css/include_css.jsp" %>
-
-=======
-	<%@ include file="/css/include_css.jsp" %>
-
->>>>>>> d6e8795a0f09e67f90d31d3b55515dfdc6fef2b3
+	<%@ include file="/css/include_css.jsp" %>		
+	
 </head>
 <body>
 
 <!-- display application path -->
 <% //= request.getContextPath()%>
-<<<<<<< HEAD
-
+	
 <!-- can also find path like this...<a href="${pageContext.request.contextPath}${'/a5/index.jsp'}">A5</a> -->
 
-	<%@ include file="/global/nav.jsp" %>
-=======
-
-<!-- can also find path like this...<a href="${pageContext.request.contextPath}${'/a5/index.jsp'}">A5</a> -->
-
-	<%@ include file="/global/nav.jsp" %>
->>>>>>> d6e8795a0f09e67f90d31d3b55515dfdc6fef2b3
+	<%@ include file="/global/nav.jsp" %>	
 
 	<div class="container">
 		<div class="starter-template">
 			<div class="row">
 				<div class="col-sm-8 col-sm-offset-2">
-<<<<<<< HEAD
-
-=======
-
->>>>>>> d6e8795a0f09e67f90d31d3b55515dfdc6fef2b3
+					
 					<div class="page-header">
 						<%@ include file="global/header.jsp" %>
 					</div>
@@ -57,11 +41,8 @@
 					<b>Database Connectivity Using Servlets:</b><br />
 					<img src="img/database_connectivity1.png" class="img-responsive" alt="Database Connectivity Using Servlets" />
 				<br />
-<<<<<<< HEAD
 					<img src="img/database_connectivity2.png" class="img-responsive" alt="Database Connectivity Using Servlets" />
 
-=======
->>>>>>> d6e8795a0f09e67f90d31d3b55515dfdc6fef2b3
 				</div>
 			</div>
 
@@ -70,11 +51,7 @@
 	</div> <!-- end starter-template -->
  </div> <!-- end container -->
 
-<<<<<<< HEAD
- 	<%@ include file="js/include_js.jsp" %>
-=======
- 	<%@ include file="js/include_js.jsp" %>
->>>>>>> d6e8795a0f09e67f90d31d3b55515dfdc6fef2b3
+ 	<%@ include file="/js/include_js.jsp" %>		
 
 </body>
 </html>

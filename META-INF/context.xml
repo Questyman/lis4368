@@ -23,22 +23,22 @@
          connection.  mysqld by default closes idle connections after 8 hours.
          -->
   <!-- logAbandoned, removeAbandonedOnBorrow,
-			 removeAbandonedOnMaintenance, removeAbandonedTimeout: Control whether
-        the container will prevent connection pool leaks by automatically removing
-        Connection, Statement, ResultSet, etc. objects that haven't been closed
+			 removeAbandonedOnMaintenance, removeAbandonedTimeout: Control whether 
+        the container will prevent connection pool leaks by automatically removing 
+        Connection, Statement, ResultSet, etc. objects that haven't been closed 
         -->
     <Resource
-				url="jdbc:mysql://localhost:3306/mg14e"
+				url="jdbc:mysql://localhost:3306/yourfsuid"				
 				type="javax.sql.DataSource"
-				name="jdbc/mg14e"
+				name="jdbc/yourfsuid"
 				auth="Container"
-				username="mg14e"
-				password="mg14e"
+				username="yourmysqlusername"
+				password="yourmysqlpassword"
 				maxTotal="100"
 				maxIdle="30"
 				maxWaitMillis="10000"
-				logAbandoned="true"
+				logAbandoned="true"				
 				removeAbandonedOnBorrow="true"
 				removeAbandonedOnMaintenance="true"
-				removeAbandonedTimeout="60"  />
+				removeAbandonedTimeout="60"  />  
 </Context>

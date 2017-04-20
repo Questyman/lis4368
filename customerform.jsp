@@ -6,29 +6,29 @@
 <meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="My work on a JSP form as part of a class assignment">
-	<meta name="author" content="Michael Gunter">
+	<meta name="description" content="My online portfolio that illustrates skills acquired while working through various project requirements.">
+	<meta name="author" content="Mark K. Jowett, Ph.D.">
 	<link rel="icon" href="favicon.ico">
 
 	<title>CRSXXXX - JSP Forms</title>
 
-	<%@ include file="/css/include_css.jsp" %>
-
+	<%@ include file="/css/include_css.jsp" %>		
+	
 </head>
 <body>
 
 <!-- display application path -->
 <% //= request.getContextPath()%>
-
-<!-- can also find path like this...<a href="${pageContext.request.contextPath}${'/a5/index.jsp'}">A5</a> -->
-
-	<%@ include file="/global/nav_global.jsp" %>
+	
+<!-- can also find path like this...<a href="${pageContext.request.contextPath}${'/a5/index.jsp'}">A5</a> -->	
+	
+	<%@ include file="/global/nav_global.jsp" %>	
 
 	<div class="container">
 		<div class="starter-template">
 			<div class="row">
 				<div class="col-xs-12">
-
+					
 					<div class="page-header">
 
 					<!-- View source or uncomment to display Parameter value...
@@ -42,7 +42,7 @@
 
 					<%  // w/o using taglib: String anum = request.getParameter("assign_num"); %>
 					<!-- Or, using JSTL's expression language (EL): request parameters made available in implicit param object. -->
-
+						
 					<c:set var="anum" value="${param.assign_num}" scope="request" />
 					<!-- Uncomment to Print: -->
 					<%-- <c:out value="${anum}" /> --%>
@@ -54,7 +54,7 @@
 						</c:when>
 
 						<c:when test="${anum == 'a4'}">
-							<%@ include file="/a4/global/header.jsp" %>
+							<%@ include file="/a4/global/header.jsp" %>													
 				</div>
 						</c:when>
 
@@ -64,39 +64,39 @@
 						</c:when>
 
 						<c:when test="${anum == 'p2'}">
-							<%@ include file="/p2/global/header.jsp" %>
+							<%@ include file="/p2/global/header.jsp" %>													
 			</div>
 						</c:when>
-
+						
 						<c:otherwise>
 							<% response.sendRedirect("/lis4368/index.jsp"); %>
 						</c:otherwise>
 					</c:choose>
-
+					
 <!--
-https://www.tutorialspoint.com/servlets/servlets-first-example.htm
-http://stackoverflow.com/questions/11731377/servlet-returns-http-status-404-the-requested-resource-servlet-is-not-availa
+https://www.tutorialspoint.com/servlets/servlets-first-example.htm								
+http://stackoverflow.com/questions/11731377/servlet-returns-http-status-404-the-requested-resource-servlet-is-not-availa								
 Form action submission to URL with leading slash:
 <form action="/servlet">
 Leading slash / makes URL relative to domain, that is, form will submit to:
 http://localhost:9999/servlet
 
-Form action submission to URL w/o leading slash:
+Form action submission to URL w/o leading slash:								
 <form action="servlet">
 Makes URL relative to current directory of current URL. Form will submit to:
-http://localhost:9999/contextname/somedirectory/servlet
+http://localhost:9999/contextname/somedirectory/servlet								
 
 Best solution: make URL domain-relative (won't need to fix URLs when JSP/HTML files moved into another folder)
 <form action="${pageContext.request.contextPath}/servlet">
 
-Makes URL context relative. Form will submit to:
+Makes URL context relative. Form will submit to:								
 <form action="/contextname/servlet">
 Will *always* submit to correct URL!
 -->
-					<form id="add_customer_form" method="post" class="form-horizontal" action="${pageContext.request.contextPath}/customerList">
-
-						<input type="hidden" name="action" value="add">
-
+					<form id="add_customer_form" method="post" class="form-horizontal" action="${pageContext.request.contextPath}/customerList">					
+						
+						<input type="hidden" name="action" value="add">						
+						
 						<div class="form-group">
 							<label class="col-sm-4 control-label">FName:</label>
 							<div class="col-sm-4">
@@ -110,42 +110,7 @@ Will *always* submit to correct URL!
 								<input type="text" class="form-control" maxlength="30" name="lname" value="${customer.lname}" />
 							</div>
 						</div>
-
-						<div class="form-group">
-							<label class="col-sm-4 control-label">Street:</label>
-							<div class="col-sm-4">
-								<input type="text" class="form-control" maxlength="30" name="street" value="${customer.street}" />
-							</div>
-						</div>
-
-						<div class="form-group">
-							<label class="col-sm-4 control-label">City:</label>
-							<div class="col-sm-4">
-								<input type="text" class="form-control" maxlength="30" name="city" value="${customer.city}" />
-							</div>
-						</div>
-
-						<div class="form-group">
-							<label class="col-sm-4 control-label">State:</label>
-							<div class="col-sm-4">
-								<input type="text" class="form-control" maxlength="2" name="state" value="${customer.state}" />
-							</div>
-						</div>
-
-						<div class="form-group">
-							<label class="col-sm-4 control-label">Zip:</label>
-							<div class="col-sm-4">
-								<input type="text" class="form-control" maxlength="9" name="zip" value="${customer.zip}" />
-							</div>
-						</div>
-
-						<div class="form-group">
-							<label class="col-sm-4 control-label">Phone:</label>
-							<div class="col-sm-4">
-								<input type="text" class="form-control" maxlength="10" name="phone" value="${customer.phone}" />
-							</div>
-						</div>
-
+						
 						<div class="form-group">
 							<label class="col-sm-4 control-label">Email:</label>
 							<div class="col-sm-4">
@@ -154,26 +119,12 @@ Will *always* submit to correct URL!
 						</div>
 
 						<div class="form-group">
-							<label class="col-sm-4 control-label">Balance:</label>
-							<div class="col-sm-4">
-								<input type="text" class="form-control" maxlength="7" name="balance" value="${customer.balance}" />
-							</div>
-						</div>
-
-						<div class="form-group">
-							<label class="col-sm-4 control-label">Total Sales:</label>
-							<div class="col-sm-4">
-								<input type="text" class="form-control" maxlength="7" name="total_sales" value="${customer.totalSales}" />
-							</div>
-						</div>
-
-						<div class="form-group">
 							<label class="col-sm-4 control-label">Notes:</label>
 							<div class="col-sm-4">
-								<input type="text" class="form-control" maxlength="255" name="notes" value="${customer.notes}" />
+								<input type="text" class="form-control" maxlength="255" name="notes" />
 							</div>
 						</div>
-
+						
 						<div class="form-group">
 							<div class="col-sm-6 col-sm-offset-3">
 								<button type="submit" class="btn btn-primary" name="signup" value="Sign up">Submit</button>
@@ -188,8 +139,8 @@ Will *always* submit to correct URL!
 	</div> <!-- end starter-template -->
  </div> <!-- end container -->
 
- 	<%--@ include file="/js/include_js.jsp" --%>
-
+ 	<%--@ include file="/js/include_js.jsp" --%>		
+ 
 <script type="text/javascript">
 $(document).ready(function() {
 
@@ -220,7 +171,7 @@ $(document).ready(function() {
 										//alphanumeric (also, "+" prevents empty strings):
 										regexp: /^[a-zA-Z\-]+$/,
 										message: 'First name can only contain letters and hyphens.'
-									},
+									},									
 							},
 					},
 
@@ -237,95 +188,10 @@ $(document).ready(function() {
 									regexp: {
 										regexp: /^[a-zA-Z\-]+$/,
 										message: 'Last name can only contain letters and hyphens'
-									},
+									},									
 							},
-					},
-
-					street: {
-								validators: {
-										notEmpty: {
-												message: 'Street required'
-										},
-										stringLength: {
-												min: 1,
-												max: 30,
-												message: 'Street must contain no more than 30 characters'
-										},
-										regexp: {
-											regexp: /^[a-zA-Z0-9 ,.\-]+$/,
-											message: 'Street can only contain letters, numbers, commas, periods, or hyphens.'
-										},
-								},
-						},
-
-						city: {
-									validators: {
-											notEmpty: {
-													message: 'City required'
-											},
-											stringLength: {
-													min: 1,
-													max: 30,
-													message: 'City must contain no more than 30 characters'
-											},
-											regexp: {
-												regexp: /^[a-zA-Z0-9 ,\-]+$/,
-												message: 'City can only contain letters, numbers, commas, spaces, and hyphens.'
-											},
-									},
-							},
-
-							state: {
-										validators: {
-												notEmpty: {
-														message: 'State required'
-												},
-												stringLength: {
-														min: 2,
-														max: 2,
-														message: 'State must contain only 2 characters'
-												},
-												regexp: {
-													regexp: /^[a-zA-Z]+$/,
-													message: 'State can only contain letters.'
-												},
-										},
-								},
-
-								zip: {
-											validators: {
-													notEmpty: {
-															message: 'Zip required'
-													},
-													stringLength: {
-															min: 5,
-															max: 9,
-															message: 'Zip must contain 5 to 9 characters'
-													},
-													regexp: {
-														regexp: /^[0-9]+$/,
-														message: 'State can only contain numbers.'
-													},
-											},
-									},
-
-									phone: {
-												validators: {
-														notEmpty: {
-																message: 'Phone required'
-														},
-														stringLength: {
-																min: 10,
-																max: 10,
-																message: 'Phone must contain only than 10 characters'
-														},
-														regexp: {
-															regexp: /^[0-9]+$/,
-															message: 'Phone can only contain numbers.'
-														},
-												},
-										},
-
+					},				
+					
 					email: {
 							validators: {
 									notEmpty: {
@@ -339,7 +205,7 @@ $(document).ready(function() {
 											message: 'Must include valid email address'
 									},
 									*/
-
+								
 									stringLength: {
 											min: 1,
 											max: 100,
@@ -348,43 +214,9 @@ $(document).ready(function() {
 									regexp: {
 									regexp: /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/,
 										message: 'Must include valid email'
-									},
+									},																		
 							},
 					},
-
-					balance: {
-								validators: {
-										notEmpty: {
-												message: 'Balance is required'
-										},
-										stringLength: {
-												min: 1,
-												max: 7,
-												message: 'Balance must contain no more than 6 digits, including decimal point'
-										},
-										regexp: {
-											regexp: /^[0-9\.]+$/,
-											message: 'Balance can only contain numbers or decimal point.'
-										},
-								},
-						},
-
-					totalsales: {
-								validators: {
-										notEmpty: {
-												message: 'Total sales required'
-										},
-										stringLength: {
-												min: 1,
-												max: 7,
-												message: 'Total sales must contain no more than 6 digits, including decimal point'
-										},
-										regexp: {
-											regexp: /^[0-9\.]+$/,
-											message: 'Total sales can only contain numbers or decimal point.'
-										},
-								},
-						},
 
 			}
 	});
