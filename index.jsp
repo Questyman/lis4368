@@ -10,21 +10,21 @@
 
 	<title>My Online Portfolio</title>
 
-	<%@ include file="/css/include_css.jsp" %>		
+	<%@ include file="/css/include_css.jsp" %>
 
 <!-- Carousel styles -->
 <style type="text/css">
 h2
 {
-	margin: 0;     
+	margin: 0;
 	color: #666;
 	padding-top: 90px;
 	font-size: 52px;
-	font-family: "trebuchet ms", sans-serif;    
+	font-family: "trebuchet ms", sans-serif;
 }
 .item
 {
-	background: #333;    
+	background: #333;
 	text-align: center;
 	height: 300px !important;
 }
@@ -37,16 +37,16 @@ h2
   margin: 20px;
 }
 </style>
-	
+
 </head>
 <body>
-	
-	<%@ include file="/global/nav_global.jsp" %>	
-	
+
+	<%@ include file="/global/nav_global.jsp" %>
+
 	<div class="container">
 		 <div class="starter-template">
 						<div class="page-header">
-						<%@ include file="/global/header.jsp" %>							
+						<%@ include file="/global/header.jsp" %>
 						</div>
 
 <!-- Start Bootstrap Carousel  -->
@@ -57,15 +57,15 @@ h2
 		data-interval="1000"
 		data-pause="hover"
 		data-wrap="true"
-		data-keyboard="true"			
+		data-keyboard="true"
 		data-ride="carousel">
-		
+
     	<!-- Carousel indicators -->
         <ol class="carousel-indicators">
             <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
             <li data-target="#myCarousel" data-slide-to="1"></li>
             <li data-target="#myCarousel" data-slide-to="2"></li>
-        </ol>   
+        </ol>
        <!-- Carousel items -->
         <div class="carousel-inner">
 
@@ -77,14 +77,14 @@ h2
 							 <a class="btn btn-large btn-primary" href="#">Learn more</a>
 						 </div>
 					 </div>
-				 </div>					
+				 </div>
 
             <div class="item">
                 <h2>Slide 2</h2>
                 <div class="carousel-caption">
                   <h3>Second slide label</h3>
                   <p>Aliquam sit amet gravida nibh, facilisis gravida odio.</p>
-						 <img src="img/slide2.png" alt="Slide 2">									
+						 <img src="img/slide2.png" alt="Slide 2">
                 </div>
             </div>
 
@@ -93,7 +93,7 @@ h2
                 <div class="carousel-caption">
                   <h3>Third slide label</h3>
                   <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-						 <img src="img/slide3.png" class="img-responsive" alt="Slide 3">									
+						 <img src="img/slide3.png" class="img-responsive" alt="Slide 3">
                 </div>
             </div>
 
@@ -115,6 +115,6 @@ h2
 </div> <!-- end container -->
 
  	<%@ include file="/js/include_js.jsp" %>
-	
+
 </body>
 </html>
