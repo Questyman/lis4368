@@ -40,3 +40,6 @@
     - Data Entry to Database
 
 7. [P2 README.md](p2/README.md "My P2 README.md file")
+    - Server-side Form Validation
+    - Database Functionality (Create, Read, Update, Delete)
+    - Data Entry to Database
